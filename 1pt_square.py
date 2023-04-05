@@ -14,3 +14,8 @@ vs.RectangleN(orgin, direction, width, height) #2D四角形オブジェクトの
 #---
 # |1|x   |width      |Number|910   |
 # |2|y   |height     |Number|910   |
+
+
+#Features
+#"1点型オブジェクト"を使用して四角形オブジェクトを生成するプラグインオブジェクト
+#1点型オブジェクトの作成方法を理解するためにシンプルにつくってみたプラグインオブジェクトです.
