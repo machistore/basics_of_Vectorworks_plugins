@@ -9,7 +9,7 @@ height = vs.Py #オブジェクト情報パレットで指定された高さ(奥
 vs.RectangleN(orgin, direction, width, height) #2D四角形オブジェクトの生成API
 
 
-#パラメータ1
+#パラメータ
 # |#|名前|フィールド名|型     |初期値|
 #---
 # |1|x   |width      |Number|910   |
