@@ -1,5 +1,4 @@
 #Created by Katsutoshi Machida Apr. 2023.
-
 import vs
 
 width =  vs.PLineLength
@@ -9,6 +8,7 @@ x = 0
 y = 0
 
 vs.Rect(x, y, width, depth) 
+
 
 #パラメータ
 # |#|名前      |フィールド名|型       |初期値|
