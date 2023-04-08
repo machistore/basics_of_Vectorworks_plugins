@@ -11,7 +11,7 @@ vs.RectangleN(orgin, direction, width, height) #2D四角形オブジェクトの
 
 #パラメータ
 # |#|名前|フィールド名|型     |初期値|
-#---
+# |---|---|---|---|---|
 # |1|x   |width      |Number|910   |
 # |2|y   |height     |Number|910   |
 
