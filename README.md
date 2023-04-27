@@ -5,8 +5,8 @@ Vectorworks プラグイン オブジェクトの基本を理解するための�
 
 # Demo
 - examples of Point objects    
-1点型オブジェクトの1例
-    - file name:point_objects_example_1.py
+1点型オブジェクトの1例    
+(point_objects_example_1.py)
 
 https://user-images.githubusercontent.com/104885577/234767461-7e27376c-89ff-4d91-b242-86b2c24b4a64.mp4
 
