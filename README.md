@@ -34,12 +34,12 @@ https://user-images.githubusercontent.com/104885577/234767485-a8cfbf28-eca2-4d02
 
 # Note
 
-Any required parameters are noted at the end of each script.    
-Operation has been confirmed only with Vectorworks2019.    
+- Any required parameters are noted at the end of each script.    
+- Operation has been confirmed only with Vectorworks2019.    
 Please note that we have not confirmed the operation in other versions.
 
-必要なパラメーターは、各スクリプトの最後に記載されています。    
-Vectorworks2019のみ動作確認済みです。    
+- 必要なパラメーターは、各スクリプトの最後に記載されています。    
+- Vectorworks2019のみ動作確認済みです。    
 それ以外のバージョンでの動作は確認しておりませんので、予めご了承ください。
 
 
