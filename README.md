@@ -22,6 +22,15 @@ https://user-images.githubusercontent.com/104885577/234767472-40df6fb8-60b2-4b97
 https://user-images.githubusercontent.com/104885577/234767485-a8cfbf28-eca2-4d02-a61e-c29341bc266f.mp4
 
 
+# Note
+
+Operation has been confirmed only with Vectorworks2019.    
+Please note that we have not confirmed the operation in other versions.
+
+Vectorworks2019のみ動作確認済みです。    
+それ以外のバージョンでの動作は確認しておりませんので、予めご了承ください。
+
+
 # Author
 
 * Katsutoshi Machida
