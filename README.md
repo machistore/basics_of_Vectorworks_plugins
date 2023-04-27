@@ -40,6 +40,10 @@ Please note that we have not confirmed the operation in other versions.
 Vectorworks2019のみ動作確認済みです。    
 それ以外のバージョンでの動作は確認しておりませんので、予めご了承ください。
 
+Any required parameters are noted at the end of each script.
+
+必要なパラメーターは、各スクリプトの最後に記載されています。
+
 
 # Author
 
