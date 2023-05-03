@@ -1,4 +1,4 @@
-
+#Created by Katsutoshi Machida Apr. 2023.
 import vs
 
 target = vs.FSActLayer() #選択図形の中で一番上の図形をtargetとする
