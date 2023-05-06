@@ -32,6 +32,13 @@ https://user-images.githubusercontent.com/104885577/234767485-a8cfbf28-eca2-4d02
 ![hybrid_objects_example_1](https://user-images.githubusercontent.com/104885577/234775298-33e7415d-960e-4091-a2ae-b37370a15b9d.png)
 
 
+- print_area_sobj    
+選択した2Dオブジェクトの面積を文字列オブジェクトで返す1例    
+(print_area_sobj.py)
+
+https://user-images.githubusercontent.com/104885577/236593239-ad549c05-c597-4de7-978e-8a81f65a8fbf.mp4
+
+
 # Note
 
 - Any required parameters are noted at the end of each script.    
