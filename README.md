@@ -36,7 +36,9 @@ https://user-images.githubusercontent.com/104885577/234767485-a8cfbf28-eca2-4d02
 選択した2Dオブジェクトの面積を文字列オブジェクトで返す1例    
 (print_area_sobj.py)
 
-https://user-images.githubusercontent.com/104885577/236593239-ad549c05-c597-4de7-978e-8a81f65a8fbf.mp4
+
+https://user-images.githubusercontent.com/104885577/236593353-3e31e752-41ca-4f7b-84fe-3a401deab8e0.mp4
+
 
 
 # Note
