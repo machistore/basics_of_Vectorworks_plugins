@@ -15,4 +15,4 @@ sobj = vs.FSActLayer() #アクティブレイヤ上で選択したオブジェ�
 
 for i in range(vs.NumSObj(vs.ActLayer())): #アクティブレイヤ上で選択されたオブジェクトの数だけ以下のforでくくった実行文を繰り返し実行する
 	print_area(sobj) #先に定義したcross_line(sobj)を13行目で選択したオブジェクトに実行する
-	sobj = vs.NextSObj(sobj) #13行目で選択したオブジェクトの次のオブジェクトをtargetとする->16行目のrange()でカウントした数だけ17行目と18行目を繰り返す
+	sobj = vs.NextSObj(sobj) #13行目で選択したオブジェクトの次のオブジェクトをsobjとする->16行目のrange()でカウントした数だけ17行目と18行目を繰り返す
