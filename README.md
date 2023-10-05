@@ -1,7 +1,7 @@
 # basics_of_Vectorworks_plugins
-A few simple Python scripts to understand the basics of Vectorworks plugin objects.
+A few simple Python scripts to understand the basics of Vectorworks plugins.
 
-Vectorworks プラグイン オブジェクトの基本を理解するための個人的ないくつかの簡単な Python スクリプト。
+Vectorworks プラグインの基本を理解するための個人的ないくつかの簡単なPythonスクリプト。
 
 # Demo
 - examples of Point objects    
@@ -39,6 +39,12 @@ https://user-images.githubusercontent.com/104885577/234767485-a8cfbf28-eca2-4d02
 
 https://user-images.githubusercontent.com/104885577/236593353-3e31e752-41ca-4f7b-84fe-3a401deab8e0.mp4
 
+
+- sqlite3_callall_table
+指定したSQLiteファイルの指定したテーブルをVectorworksに取り込む1例.    
+(sqlite3_callall_table.py)
+
+https://github.com/machistore/basics_of_Vectorworks_plugins/assets/104885577/4402d097-4b6f-41e1-9787-cfbed83eb0a1
 
 
 # Note
