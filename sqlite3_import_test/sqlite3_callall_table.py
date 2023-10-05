@@ -10,7 +10,7 @@ def sqlite_table_import():
     cur = conn.cursor()
 
     # SQLクエリを実行(引数に実行したいクエリを記入)
-    cur.execute("SELECT * FROM table_name")
+    cur.execute("SELECT * FROM names")
 
     # 結果を取得
     rows = cur.fetchall()
