@@ -1,4 +1,4 @@
-# basics_of_Vectorworks_plugin_objects
+# basics_of_Vectorworks_plugins
 A few simple Python scripts to understand the basics of Vectorworks plugin objects.
 
 Vectorworks プラグイン オブジェクトの基本を理解するための個人的ないくつかの簡単な Python スクリプト。
