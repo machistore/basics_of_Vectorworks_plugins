@@ -25,4 +25,4 @@ def sqlite_table_import():
 
 
 if __name__ == "__main__":
-sqlite_table_import()
+    sqlite_table_import()
