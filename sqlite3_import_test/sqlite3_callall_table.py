@@ -24,4 +24,5 @@ def sqlite_table_import():
     conn.close()
 
 
+if __name__ == "__main__":
 sqlite_table_import()
