@@ -19,3 +19,6 @@
     - Vectorworks Developer ウェブサイトRetrieved 2024-04-21 from [Vectorworks Developer](https://developer.vectorworks.net/index.php?title=VS:ClassList)
     - A&A ウェブサイトRetrieved 2024-04-21 from [Vectorworks 2024 Script Function Reference](https://www.aanda.co.jp/develop/ScriptReference/Pages/Classes.html#ClassList)
     
+## テストファイル
+- get_all_class_names.vwx
+  - Vectorworks 2024
