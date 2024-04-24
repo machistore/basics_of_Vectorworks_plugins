@@ -1,4 +1,5 @@
 # Created by Katsutoshi Machida Oct. 2023.
+# description: アクティブなドキュメント内のレイヤの表示状態を取得し、アラートダイアログで表示する
 
 import vs
 
