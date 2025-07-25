@@ -17,10 +17,10 @@ Vectorworks Python APIを使用してテキストファイルを読み込み、�
 ## 使用方法
 
 ### 1. 直接実行
-スクリプトを直接実行すると、ファイル選択ダイアログが表示されます：
+スクリプトをVectorworksで直接実行すると、ファイル選択ダイアログが表示されます：
 
 ```python
-python read_file_to_dict.py
+read_file_to_dict.py
 ```
 
 ### 2. 関数として使用
@@ -105,10 +105,10 @@ This script reads text files containing key-value pairs separated by colons (`:`
 ## Usage
 
 ### 1. Direct Execution
-When executed directly, a file selection dialog will appear:
+If you run the script directly in Vectorworks, a file selection dialog will appear:
 
 ```python
-python read_file_to_dict.py
+read_file_to_dict.py
 ```
 
 ### 2. Function Usage
