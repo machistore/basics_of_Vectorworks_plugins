@@ -1,0 +1,17 @@
+Name: John Doe
+Age: 30
+City: Tokyo
+Occupation: Software Engineer
+Country: Japan
+
+Name: Jane Smith
+Age: 28
+City: Osaka
+Occupation: Graphic Designer
+Country: Japan
+
+Name: Bob Brown
+Age: 35
+City: Nagoya
+Occupation: Project Manager
+Country: Japan
