@@ -1,7 +1,7 @@
 # description: 重複するオブジェクトを検出するスクリプト
 # version: 1.0
 # target app: Vectorworks
-# autor: Koki Igarashi
+# autor: Katsutoshi Machida
 # date: 2024-05-07
 # update: 2024-05-07
 # license: MIT
