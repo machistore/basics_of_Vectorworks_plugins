@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VectorworksのExcel API動作検証報告書 - 検証環境</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'メイリオ', sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f5f5f5;
+        }
+        
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .report-header {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .date-info {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        th {
+            background-color: #0066cc;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        tr:last-child td {
+            border-bottom: none;
+        }
+        
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .item-name {
+            font-weight: 500;
+            color: #444;
+        }
+        
+        .no-info {
+            color: #999;
+            font-style: italic;
+        }
+        
+        .info-available {
+            color: #333;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            color: #333;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-header">
+        <h1>VectorworksのExcel API動作検証報告書</h1>
+        <div class="date-info">作成日: 2025年8月</div>
+    </div>
+
+    <div class="section-title">検証環境</div>
+    
+    <table>
+        <tr>
+            <th style="width: 40%;">検証環境項目</th>
+            <th style="width: 60%;">内容</th>
+        </tr>
+        <tr>
+            <td class="item-name">ソフトウェアバージョン</td>
+            <td class="info-available">Vectorworks 2025</td>
+        </tr>
+        <tr>
+            <td class="item-name">APIバージョン</td>
+            <td class="info-available">EXL関数群（Vectorworks 2021以降で利用可能）</td>
+        </tr>
+        <tr>
+            <td class="item-name">スクリプト言語</td>
+            <td class="info-available">Python</td>
+        </tr>
+        <tr>
+            <td class="item-name">オペレーティングシステム</td>
+            <td class="info-available">Windows11</td>
+        </tr>
+        <tr>
+            <td class="item-name">必要な外部ソフトウェア</td>
+            <td class="info-available">Microsoft Excel（COM連携用）</td>
+        </tr>
+        <tr>
+            <td class="item-name">ハードウェア仕様</td>
+            <td class="no-info">情報なし</td>
+        </tr>
+        <tr>
+            <td class="item-name">メモリ要件</td>
+            <td class="no-info">情報なし</td>
+        </tr>
+        <tr>
+            <td class="item-name">ディスク容量</td>
+            <td class="no-info">情報なし</td>
+        </tr>
+        <tr>
+            <td class="item-name">ネットワーク環境</td>
+            <td class="no-info">情報なし</td>
+        </tr>
+        <tr>
+            <td class="item-name">検証実施者</td>
+            <td class="no-info">Katsutoshi Machida</td>
+        </tr>
+    </table>
+
+    <div class="section-title">検証で使用した主要API関数</div>
+    
+    <table>
+        <tr>
+            <th>関数名</th>
+            <th>説明</th>
+        </tr>
+        <tr>
+            <td class="item-name">EXL_NewBook</td>
+            <td class="info-available">メモリ上にExcelワークブックを作成</td>
+        </tr>
+        <tr>
+            <td class="item-name">EXL_AddSheet</td>
+            <td class="info-available">ワークブックにシートを追加（必須）</td>
+        </tr>
+        <tr>
+            <td class="item-name">EXL_SetCellString</td>
+            <td class="info-available">セルに文字列を設定</td>
+        </tr>
+        <tr>
+            <td class="item-name">EXL_SetCellNumber</td>
+            <td class="info-available">セルに数値を設定</td>
+        </tr>
+        <tr>
+            <td class="item-name">EXL_SaveAndCloseBook</td>
+            <td class="info-available">ワークブックを物理ファイルとして保存</td>
+        </tr>
+    </table>
+
+    <div class="section-title">検証結果サマリー</div>
+    
+    <table>
+        <tr>
+            <th>検証項目</th>
+            <th>結果</th>
+        </tr>
+        <tr>
+            <td class="item-name">物理ファイル作成の必須要件</td>
+            <td class="info-available">EXL_NewBook → EXL_AddSheet → EXL_SaveAndCloseBook の3ステップが必須</td>
+        </tr>
+        <tr>
+            <td class="item-name">インデックス仕様</td>
+            <td class="info-available">すべて0ベース（sheet=0, row=0, column=0）</td>
+        </tr>
+        <tr>
+            <td class="item-name">シート追加の必要性</td>
+            <td class="info-available">EXL_AddSheetを省略すると物理ファイルが作成されない</td>
+        </tr>
+    </table>
+
+    <div class="section-title">実用コード例</div>
+    
+    <div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px;">
+        <h3 style="color: #0066cc; margin-top: 0; margin-bottom: 15px; font-size: 16px;">基本的なExcelファイル作成</h3>
+        <pre style="background-color: #f5f5f5; padding: 15px; border-radius: 4px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.5;">
+import vs
+import os
+
+# 基本設定
+desktop = os.path.join(os.path.expanduser("~"), "Desktop")
+excel_file_path = os.path.join(desktop, "sample.xlsx")
+
+# 必須3ステップ
+vs.EXL_NewBook(excel_file_path)
+vs.EXL_AddSheet("データ")  # 必須！
+vs.EXL_SetCellString(0, 0, 0, "A1セルのデータ")  # 0ベースインデックス
+vs.EXL_SaveAndCloseBook(excel_file_path)
+        </pre>
+    </div>
+
+    <div class="section-title">テストコード例</div>
+    
+    <div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <h3 style="color: #0066cc; margin-top: 0; margin-bottom: 15px; font-size: 16px;">シートの有無による保存動作の検証</h3>
+        <pre style="background-color: #f5f5f5; padding: 15px; border-radius: 4px; overflow-x: auto; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.5;">
+import vs
+import os
+
+def test_sheet_requirement():
+    """シートの有無による保存動作の検証"""
+    
+    desktop = os.path.join(os.path.expanduser("~"), "Desktop")
+    
+    # テスト1: シートなしで保存を試みる
+    test1_path = os.path.join(desktop, "test_no_sheet.xlsx")
+    vs.AlrtDialog("テスト1: シートなしで保存")
+    
+    vs.EXL_NewBook(test1_path)
+    # EXL_AddSheetを呼ばない
+    result1 = vs.EXL_SaveAndCloseBook(test1_path)
+    
+    if os.path.exists(test1_path):
+        vs.AlrtDialog(f"✓ ファイル作成された: {test1_path}")
+    else:
+        vs.AlrtDialog(f"✗ ファイル作成されず: {test1_path}")
+    
+    # テスト2: シートありで保存
+    test2_path = os.path.join(desktop, "test_with_sheet.xlsx")
+    vs.AlrtDialog("\nテスト2: シートありで保存")
+    
+    vs.EXL_NewBook(test2_path)
+    
+    sheet_added = vs.EXL_AddSheet("MySheet")  # シートを追加
+    if sheet_added:
+        vs.AlrtDialog("新しいシートを追加しました")
+    result2 = vs.EXL_SaveAndCloseBook(test2_path)
+    
+    if os.path.exists(test2_path):
+        vs.AlrtDialog(f"✓ ファイル作成された: {test2_path}")
+    else:
+        vs.AlrtDialog(f"✗ ファイル作成されず: {test2_path}")
+
+# 実行
+test_sheet_requirement()
+        </pre>
+        <div style="margin-top: 15px; padding: 10px; background-color: #fff3cd; border-left: 4px solid #ffc107; border-radius: 4px;">
+            <strong style="color: #856404;">検証結果:</strong>
+            <ul style="margin: 10px 0 0 20px; color: #856404;">
+                <li>テスト1（シートなし）: ファイルは作成されない</li>
+                <li>テスト2（シートあり）: ファイルが正常に作成される</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
